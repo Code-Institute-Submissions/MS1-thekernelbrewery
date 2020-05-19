@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/*---------------------------Colours-------------------------- */
+
+.nav-link:hover {
+    color: white;
+}
+
+.navbar {
+    background-color: rgba(155, 155, 155, 0.5);
+}
+
+/*---------------------------Heading-------------------------- */
+
+.navbar-nav {
+    position: sticky top;
+    height: 12em;
+    width: 100%;
+}
+.nav-link {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    color: black;
+    display: inline-block;
+    margin-top: 1.5em;
+}
+
+.nav-logo img { 
+    margin-top: -2em;
+    height: 15em;
+    display: inline-block;
+}
+
+/*-----------------------Background Video--------------------- */
+#herovideo {
+  position: fixed;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.top-right {
+    position: absolute;
+    left: 75%;
+    top: 40%;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 2em;
+    border: 0.5em double white;
+    padding: 0.5em
+}
+
+/*-----------------------Latest Releases--------------------- */
+
+
+/*-----------------------Index Taproom--------------------- */

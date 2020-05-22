@@ -1,48 +1,124 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-/*---------------------------Colours-------------------------- */
 
+/*---------------------------Colours-------------------------- */
+body {
+    overflow-x: hidden;
+}
 .nav-link:hover {
     color: white;
 }
 
 .navbar {
-    background-color: rgba(155, 155, 155, 0.5);
+    background-color: rgba(155, 155, 155, 0.6);
+    position: fixed;
 }
+#navbar-background {
+    background-color: rgba(155, 155, 155, 1);
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -2;
+    display: none;
+    position: absolute;
+}
+
 
 /*---------------------------Heading-------------------------- */
 
-.navbar-nav {
-    position: sticky top;
-    height: 12em;
-    width: 100%;
+.navbar {
+    overflow: hidden;
+    min-height: 19em;
+    min-width: 100%;
+    top: 0;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    
 }
 .nav-link {
     font-family: 'Oswald', sans-serif;
     font-size: 2em;
     color: black;
     display: inline-block;
-    margin-top: 1.5em;
+    z-index: 1;
+    
+    
 }
 
 .nav-logo img { 
-    margin-top: -2em;
-    height: 15em;
     display: inline-block;
+    width: 100%;
 }
 
-/*-----------------------Background Video--------------------- */
-#herovideo {
-  position: fixed;
-  z-index: -1;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+.navbar-toggler {
+    position: relative;
+    display: block;   
+}
+
+.navbar-toggler[aria-expanded="true"] ~ #navbar-background {
+    display: block;
+}
+
+@media only screen and (max-width: 687px){
+    .navbar{
+        min-height: 12em;
+        padding-bottom: em;
+    }
+    .navbar-toggler {
+        right: 45%;
+    }
+}
+
+/*-----------------------Index Hero Section--------------------- */
+
+
+.heroimage {
+    display: none;
+    max-width: 100vw;
+    max-height: auto;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+.herovideo {
+    position:relative;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    display: block;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 992px) {
+    .hero-video {
+        display: none;
+    }
+    .heroimage {
+        display: block;
+    }
+    
+    
+}
+    
+@media (min-aspect-ratio: 16/9) {
+    #herovideo {
+        width:100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #herovideo { 
+        width:auto;
+        height: 100%;
+    }
 }
 
 .top-right {
     position: absolute;
+    z-index: 0;
     left: 75%;
     top: 40%;
     color: white;
@@ -51,10 +127,18 @@
     font-family: 'Jost', sans-serif;
     font-size: 2em;
     border: 0.5em double white;
-    padding: 0.5em
+    padding: 0.5em;
+    margin-right: 1%;
 }
 
 /*-----------------------Latest Releases--------------------- */
 
+.releases.title {
+        position: relative;
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase; 
+        text-align: center;
+        margin-top: 1%;
+    }
 
 /*-----------------------Index Taproom--------------------- */

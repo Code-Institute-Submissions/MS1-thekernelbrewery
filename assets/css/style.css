@@ -2,10 +2,16 @@
 
 
 /*---------------------------Colours-------------------------- */
+
 body {
     overflow-x: hidden;
+    width: 100%;
 }
 .nav-link:hover {
+    color: white;
+}
+
+.social-link:hover {
     color: white;
 }
 
@@ -22,12 +28,18 @@ body {
     position: absolute;
 }
 
+footer {
+    background-color: rgba(155, 155, 155, 0.6);
+}
+.basefooter a {
+    color: black;
+}
 
 /*---------------------------Heading-------------------------- */
 
 .navbar {
     overflow: hidden;
-    min-height: 19em;
+    min-height: 18vh;
     min-width: 100%;
     top: 0;
     position: absolute;
@@ -41,8 +53,7 @@ body {
     color: black;
     display: inline-block;
     z-index: 1;
-    
-    
+    position: relative;
 }
 
 .nav-logo img { 
@@ -69,8 +80,34 @@ body {
     }
 }
 
-/*-----------------------Index Hero Section--------------------- */
+/*-----------------------Footer--------------------- */
 
+.basefooter {
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.8vh;
+    height: auto;
+    padding: 1em;
+    overflow: hidden;
+    display: block;
+}
+
+.members {
+    padding: 0em 1em 0em 0em;
+}
+
+.members-link{
+    text-align: center;
+}
+
+.social-link {
+    position: relative;
+    display: inline-block;
+    font-size: 1.8em;
+    padding: 0% 5% 0% 5%;
+}
+
+/*-----------------------Index Hero Section--------------------- */
 
 .heroimage {
     display: none;
@@ -83,7 +120,7 @@ body {
 }
 
 .herovideo {
-    position:relative;
+    position: relative;
     z-index: -1;
     right: 0;
     bottom: 0;
@@ -98,10 +135,12 @@ body {
     .heroimage {
         display: block;
     }
-    
-    
+    .dogphoto {
+        display: none;
+    }
 }
-    
+ 
+
 @media (min-aspect-ratio: 16/9) {
     #herovideo {
         width:100%;
@@ -116,29 +155,168 @@ body {
     }
 }
 
-.top-right {
-    position: absolute;
-    z-index: 0;
-    left: 75%;
-    top: 40%;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Jost', sans-serif;
-    font-size: 2em;
-    border: 0.5em double white;
-    padding: 0.5em;
-    margin-right: 1%;
-}
-
 /*-----------------------Latest Releases--------------------- */
 
 .releases.title {
-        position: relative;
-        font-family: 'Oswald', sans-serif;
-        text-transform: uppercase; 
-        text-align: center;
-        margin-top: 1%;
-    }
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase; 
+    text-align: center;
+    margin-top: 1%;
+}
+
+.release-items {
+    position: relative;
+    display: flex;
+    height: 70vh;
+    width: auto;
+    overflow: auto;
+    margin: auto;
+}
+
+.beer1 {
+    height: 100%;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+}
+
+.beer2 {
+    height: 100%;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+}
+
+.beer3 {
+    height: 100%;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1; 
+}
+
+/*-----------------------Hover Effect--------------------- */
+
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: relative;
+    text-align: center;
+    cursor: default;
+  }
+  
+  .hovereffect .overlay {
+    position: absolute;
+    overflow: hidden;
+    width: 80%;
+    height: auto;
+    left: 10%;
+    top: 15%;
+    padding: 5vw 0 5vw 0;
+    border-bottom: 1px solid #FFF;
+    border-top: 1px solid #FFF;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0,1);
+    -ms-transform: scale(0,1);
+    transform: scale(0,1);
+  }
+  
+  .hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  
+  .hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  
+  .hovereffect:hover img {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+    filter: brightness(0.6);
+    -webkit-filter: brightness(0.6);
+  }
+  
+  .hovereffect h2 {
+    text-transform: uppercase;
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    background-color: transparent;
+    color: #FFF;
+    padding: 1em 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,-100%,0);
+    transform: translate3d(0,-100%,0);
+  }
+ 
+  .hovereffect p {
+    font-family: 'Jost', sans-serif;
+    color: #FFF;
+    margin: 2% 15% 2% 15%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+  }
+  
+  .hovereffect:hover p, .hovereffect:hover h2 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
 
 /*-----------------------Index Taproom--------------------- */
+
+.taproomhours {
+    overflow: hidden;
+    display: flex;
+    margin-top: 10vw;
+}
+.taproominfo {
+    margin-left: 10vw;
+    margin-right: auto;
+    position: relative;
+    width: auto;
+}
+.taproomtitle {
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2vw;
+    margin-bottom: 4vh;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.table {
+    text-align: center;
+}
+
+.dogphoto {
+    margin-bottom: 10vw;
+    margin-right: 10vw;
+    margin-left: 2vw;
+    height: auto;
+}

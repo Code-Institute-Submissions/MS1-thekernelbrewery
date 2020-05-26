@@ -30,6 +30,7 @@ body {
 
 footer {
     background-color: rgba(155, 155, 155, 0.6);
+    
 }
 .basefooter a {
     color: black;
@@ -320,3 +321,96 @@ footer {
     margin-left: 2vw;
     height: auto;
 }
+
+/*-----------------------taproom.html Body--------------------- */
+.taproombody {
+    margin-top: 15em;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-transform: Uppercase ;
+}
+
+.taproombody h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.taplist table {
+    font-family: 'Jost', sans-serif;
+    width: 30vw;
+    margin-left: 2.5vw;
+    height: 50vh;
+}
+
+.taplist h1 {
+    margin-left: 2.5vw;
+}
+
+iframe {
+    width: 30vw;
+    height: 50vh;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+}
+
+.hours table {
+    width: 30vw;
+    height: 50vh;
+    text-align: center;
+    margin-top: 6vh;
+    font-family: 'Jost', sans-serif;
+    padding-right: 2.5vw;
+}
+
+@media only screen and (max-width: 1423px) {
+    
+    .taproombody {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .taplist {
+        margin-bottom: 5vh;
+        text-align: center;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .taplist h1 {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .taplist table {
+        margin-left: 5vw;
+        justify-content: center;
+        margin-right: 5vw;
+        width: 80vw;
+    }
+
+    .location {
+        margin-bottom: 5vh;
+    }
+
+    iframe {
+        margin-left: 5vw;
+        justify-content: center;
+        margin-right: 5vw;
+        width: 90vw;
+        height: 80vh;
+    }
+
+    .hours table {
+        margin-left: 5vw;
+        justify-content: center;
+        margin-right: 5vw;
+        width: 90vw;
+    }
+
+    @media only screen and (max-width: 500px) {
+        .taplist {
+            overflow-x: auto;
+            width: 80vw;
+        }
+    }

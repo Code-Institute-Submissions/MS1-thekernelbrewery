@@ -48,6 +48,7 @@ footer {
     z-index: 1;
     
 }
+
 .nav-link {
     font-family: 'Oswald', sans-serif;
     font-size: 2em;
@@ -294,12 +295,14 @@ footer {
     display: flex;
     margin-top: 10vw;
 }
+
 .taproominfo {
     margin-left: 10vw;
     margin-right: auto;
     position: relative;
     width: auto;
 }
+
 .taproomtitle {
     position: relative;
     font-family: 'Oswald', sans-serif;
@@ -414,3 +417,82 @@ iframe {
             width: 80vw;
         }
     }
+}
+    /*-----------------------beers.html Body--------------------- */
+
+.beersbody {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Jost', sans-serif;
+    text-transform: Uppercase;
+    text-align: center;
+    }
+
+.headtext {
+    margin-top: 25vh;
+    width: 35vw;
+    border: 1px solid black;
+    display: inline-block;
+    padding: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title1 {
+    margin-top: 5vh;
+    }
+
+.palesection img, .darksection img, .soursection img {
+    flex-direction: row;
+    height: 80vh;
+    }
+    
+.palesection, .darksection, .soursection {
+    position: relative;
+    display: flex;
+    width: auto;
+    overflow: auto;
+    margin: auto;
+    }
+
+.soursection {
+        width: 60vw;
+        margin-bottom: 3vh;
+    }
+
+.beerinfo {
+    height: 100%;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+    }
+
+.beerinfo p {
+    width: 80%;
+    font-size: 120%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+.paleale, .ipa, .tablebeer, .dip, .dry {
+    font-size: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .beerinfo p {
+        font-size:  95%;
+        }
+}
+
+@media only screen and (max-width: 600px) {
+    .beerinfo p {
+        font-size: 80%;
+        }
+    
+    .paleale, .ipa, .tablebeer, .dip, .dry {
+        font-size: 120%;
+    }
+    
+}

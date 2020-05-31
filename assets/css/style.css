@@ -432,7 +432,7 @@ iframe {
     }
 
 .headtext {
-    margin-top: 25vh;
+    margin-top: 20vh;
     width: 35vw;
     border: 1px solid black;
     display: inline-block;
@@ -459,8 +459,7 @@ iframe {
     }
 
 .soursection {
-        width: 60vw;
-        margin-bottom: 3vh;
+    margin-bottom: 3vh;
     }
 
 .beerinfo {
@@ -486,10 +485,22 @@ iframe {
 @media only screen and (max-width: 768px) {
     .beerinfo p {
         font-size:  95%;
+        top: 35%;
+        height: auto;
         }
+
+    .headtext {
+        width: 90vw;
+        padding: 0.5em;
+    }
 }
 
 @media only screen and (max-width: 600px) {
+    
+    .headtext {
+        margin-top: 25vh;
+    }
+    
     .beerinfo p {
         font-size: 80%;
         }
@@ -497,7 +508,18 @@ iframe {
     .paleale, .ipa, .tablebeer, .dip, .dry {
         font-size: 120%;
     }
-    
+}
+
+@media only screen and (max-height: 800px) {
+    .headtext {
+        margin-top: 35vh;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .headtext {
+        width: 90%;
+    }
 }
 /*-----------------------events.html--------------------- */
 

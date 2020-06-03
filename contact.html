@@ -56,7 +56,45 @@
     </header>
 
     <section>
-      
+
+    <!--Taken from https://www.w3schools.com/howto/howto_css_contact_section.asp-->
+
+      <div class="contactform">
+       
+        <div class="row">
+         
+          <div class="form-column">
+            <form action="/action_page.php">
+
+              <div class="namebox">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name..">
+              </div>
+
+              <div class="emailbox">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Your Email..">
+              </div>
+
+              <div class="statusbox"></div>
+              <label for="position">Are you a...?</label>
+              <select id="position" name="position">
+                <option value="customer">Customer</option>
+                <option value="supplier">Supplier</option>
+                <option value="brewery">Brewer</option>
+              </select>
+              </div>
+
+              <div class="subjectbox"></div>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="How can we help you?" style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
     
     <!--Footer-->

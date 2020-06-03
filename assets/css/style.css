@@ -11,6 +11,10 @@ body {
     color: white;
 }
 
+.nav-logo:hover {
+    opacity: 0.6;
+}
+
 .social-link:hover {
     color: white;
 }
@@ -141,6 +145,11 @@ footer {
     }
     .dogphoto {
         display: none;
+    }
+    .taproomhours .table {
+        width: 90%;
+        position: relative;
+        
     }
 }
  
@@ -322,12 +331,21 @@ footer {
     text-align: center;
 }
 
+.taproomhours table {
+    width: 30vw;
+    position: relative;
+}
 .dogphoto {
     margin-bottom: 10vw;
     margin-right: 10vw;
     margin-left: 2vw;
     height: auto;
 }
+
+.dog {
+    width: 40vw;
+}
+
 
 /*-----------------------taproom.html Body--------------------- */
 
@@ -484,6 +502,10 @@ iframe {
     font-size: 100%;
 }
 
+.saison p, .foeder p {
+    width: 50%;
+}
+
 @media only screen and (max-width: 768px) {
     .beerinfo p {
         font-size:  95%;
@@ -522,6 +544,10 @@ iframe {
     .headtext {
         width: 90%;
     }
+    .saison p, .foeder p {
+        width: 80%;
+    }
+    
 }
 /*-----------------------events.html--------------------- */
 
@@ -680,3 +706,11 @@ iframe {
     }
   }
   
+/*-----------------------Contact.html--------------------- */
+
+.contactform {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 25vh;
+}

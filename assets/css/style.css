@@ -30,7 +30,7 @@ body {
     z-index: -2;
     display: none;
     position: absolute;
-    margin-left: -2vw;
+    margin-left: -4vw;
 }
 
 footer {
@@ -56,13 +56,13 @@ footer {
 .navbar-nav {
     justify-content: right;
 }
+
 .nav-link {
     font-family: 'Oswald', sans-serif;
     font-size: 2em;
     color: black;
     display: flex;
     z-index: 1;
-    
 }
 
 .nav-logo img {
@@ -87,7 +87,6 @@ footer {
         right: 45%;
         padding-bottom: 1em;
     }
-    
 }
 
 /*-----------------------Footer--------------------- */
@@ -144,9 +143,6 @@ footer {
     }
     .heroimage {
         display: block;
-    }
-    .dogphoto {
-        display: none;
     }
     .taproomhours .table {
         width: 90%;
@@ -238,7 +234,7 @@ footer {
     border-bottom: 1px solid #FFF;
     border-top: 1px solid #FFF;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
+    transition: opacity 0.15s, transform 0.15s;
     -webkit-transform: scale(0, 1);
     -ms-transform: scale(0, 1);
     transform: scale(0, 1);
@@ -314,6 +310,7 @@ footer {
     margin-right: auto;
     position: relative;
     width: auto;
+    justify-content: center;
 }
 
 .taproomtitle {
@@ -323,8 +320,7 @@ footer {
     text-transform: uppercase;
     margin-top: 2vw;
     margin-bottom: 4vh;
-    padding-left: 10%;
-    padding-right: 10%;
+    width: 30vw;
 }
 
 .table {
@@ -347,6 +343,23 @@ footer {
     width: 40vw;
 }
 
+@media only screen and (max-width: 992px) {
+    .dogphoto {
+        display: none;
+    }
+    .taproominfo {
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+    .taproomhours table {
+        min-width: 70vw;
+        margin-bottom: 5em;
+    }
+    .taproomtitle {
+        min-width: 70vw;
+    }
+}
+
 /*-----------------------taproom.html Body--------------------- */
 
 .taproombody {
@@ -366,19 +379,19 @@ footer {
 .taplist table {
     font-family: 'Jost', sans-serif;
     width: 30vw;
-    margin-left: 2.5vw;
+    margin-left: 2vw;
     height: 50vh;
 }
 
 .taplist h1 {
-    margin-left: 2.5vw;
+    margin-left: 2vw;
 }
 
 iframe {
     width: 30vw;
     height: 50vh;
-    margin-left: 2.5vw;
-    margin-right: 2.5vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 .hours table {
@@ -387,7 +400,7 @@ iframe {
     text-align: center;
     margin-top: 6vh;
     font-family: 'Jost', sans-serif;
-    padding-right: 2.5vw;
+    margin-right: 2vw;
 }
 
 @media only screen and (max-width: 1423px) {
@@ -427,11 +440,12 @@ iframe {
         margin-right: 5vw;
         width: 90vw;
     }
-    @media only screen and (max-width: 500px) {
-        .taplist {
-            overflow-x: auto;
-            width: 80vw;
-        }
+}
+
+@media only screen and (max-width: 500px) {
+    .taplist {
+        overflow-x: auto;
+        width: 80vw;
     }
 }
 

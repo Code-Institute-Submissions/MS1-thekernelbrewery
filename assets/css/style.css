@@ -101,12 +101,14 @@ footer {
     display: block;
 }
 
-.members {
-    padding: 0em 1em 0em 0em;
+.membership {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.members-link {
-    text-align: center;
+.members1 {
+    margin-top: -1em;
 }
 
 .social-link {

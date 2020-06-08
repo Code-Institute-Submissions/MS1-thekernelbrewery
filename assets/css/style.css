@@ -33,6 +33,21 @@ body {
     margin-left: -4vw;
 }
 
+@media only screen and (max-width: 700px) {
+    #contactboy {
+        flex-direction: column;
+    }
+    #contactcontainer {
+        order: 1;
+    }
+    #reachcontainer {
+        order: 2;
+    }
+    #addresscontainer {
+        order: 3;
+    }
+}
+
 footer {
     background-color: rgba(155, 155, 155, 0.6);
 }
@@ -231,8 +246,8 @@ footer {
     width: 80%;
     height: auto;
     left: 10%;
-    top: 15%;
-    padding: 5vw 0 5vw 0;
+    top: 10%;
+    bottom: 10%;
     border-bottom: 1px solid #FFF;
     border-top: 1px solid #FFF;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -271,7 +286,7 @@ footer {
     font-size: 20px;
     background-color: transparent;
     color: #FFF;
-    padding: 1em 0;
+    margin-top: 10%;
     opacity: 0;
     filter: alpha(opacity=0);
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -283,9 +298,10 @@ footer {
 .hovereffect p {
     font-family: 'Jost', sans-serif;
     color: #FFF;
-    margin: 2% 15% 2% 15%;
     opacity: 0;
     filter: alpha(opacity=0);
+    margin-left: 3vw;
+    margin-right: 3vw;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
     -webkit-transform: translate3d(0, 100%, 0);
@@ -365,7 +381,7 @@ footer {
 /*-----------------------taproom.html Body--------------------- */
 
 .taproombody {
-    margin-top: 15em;
+    margin-top: 9em;
     margin-bottom: 10vh;
     display: flex;
     flex-direction: row;
@@ -737,9 +753,229 @@ iframe {
 
 /*-----------------------Contact.html--------------------- */
 
-.contactform {
-    justify-content: center;
+#contactbody {
     display: flex;
     flex-direction: row;
-    margin-top: 25vh;
+    justify-content: center;
+}
+
+#addresscontainer {
+    border: solid 3px #474544;
+    margin-top: 20em;
+    margin-bottom: 20em;
+    position: relative;
+    width: 20vw;
+}
+
+#reachcontainer {
+    border: solid 3px #474544;
+    margin-top: 20em;
+    margin-bottom: 20em;
+    position: relative;
+    width: 20vw;
+}
+
+#contactbody h5, p {
+    text-align: center;
+}
+
+/* --Taken from https://codepen.io/dfitzy/pen/VepqMq --*/
+
+button {
+    overflow: visible;
+}
+
+button, select {
+    text-transform: none;
+}
+
+input, select, textarea {
+    color: #5A5A5A;
+    font: inherit;
+    margin: 0;
+}
+
+input {
+    line-height: normal;
+}
+
+textarea {
+    overflow: auto;
+}
+
+#contactcontainer {
+    border: solid 3px #474544;
+    width: 40vw;
+    position: relative;
+    margin-top: 10em;
+    margin-bottom: 2em;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+form {
+    padding: 37.5px;
+}
+
+.con-title {
+    color: #474544;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    padding-top: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.email {
+    float: right;
+    width: 45%;
+}
+
+input[type='text'], [type='email'], select, textarea {
+    background: none;
+    border: none;
+    border-bottom: solid 2px #474544;
+    color: #474544;
+    font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0em 0 1.875em 0;
+    padding: 0 0 0.875em 0;
+    text-transform: uppercase;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+    outline: none;
+    padding: 0 0 0.875em 0;
+}
+
+.message {
+    float: none;
+}
+
+.name {
+    float: left;
+    width: 45%;
+}
+
+select {
+    background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+textarea {
+    line-height: 150%;
+    height: 150px;
+    resize: none;
+    width: 100%;
+}
+
+::-webkit-input-placeholder {
+    color: #474544;
+}
+
+:-moz-placeholder {
+    color: #474544;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: #474544;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #474544;
+}
+
+#form_button {
+    background: none;
+    border: solid 2px #474544;
+    color: #474544;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#form_button:hover {
+    background: #474544;
+    color: #F2F3EB;
+}
+
+@media screen and (max-width: 420px) {
+    .con-title {
+        font-size: 18px;
+    }
+    .icon {
+        height: 35px;
+        width: 35px;
+    }
+    .underline {
+        width: 53px;
+    }
+    input[type='text'], [type='email'], select, textarea {
+        font-size: 0.875em;
+    }
+    form {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #contactbody {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #contactcontainer {
+        order: 1;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4vh;
+        width: 90vw;
+    }
+    #reachcontainer {
+        order: 2;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+    }
+    #addresscontainer {
+        order: 3;
+        margin-top: 4vh;
+        margin-bottom: 5vh;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+        padding: 10px;
+    }
 }

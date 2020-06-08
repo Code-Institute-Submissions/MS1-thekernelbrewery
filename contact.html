@@ -43,9 +43,6 @@
             <a class="nav-link" href="beers.html"><span>Beers</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://store.thekernelbrewery.com" target="_blank"><span>Shop</span></a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="taproom.html"><span>Taproom</span></a>
           </li>
           <li class="nav-item">
@@ -60,48 +57,64 @@
     </nav>
   </header>
 
-  <section>
+  <section id="contactbody">
 
-    <!--Taken from https://www.w3schools.com/howto/howto_css_contact_section.asp-->
+    <div id="addresscontainer">
+      <h1 class="con-title">&bull; Visit Us &bull;</h1>
+        <h5>The Brewery</h5>
+        <p>Arch 11, Dockley Road Industrial Estate, Dockley Rd, Bermondsey, London SE16 3SF</p>
+        <h5>The Taproom</h5>
+        <p>Arch 7, Dockley Road Industrial Estate, Dockley Rd, Bermondsey, London SE16 3SF</p>
+    </div>
+    <!--Taken from https://codepen.io/dfitzy/pen/VepqMq-->
 
-    <div class="contactform">
+    <div id="contactcontainer">
+      <h1 class="con-title">&bull; Get in Touch &bull;</h1>
 
-      <div class="row">
-
-        <div class="form-column">
-          <form action="/action_page.php">
-
-            <div class="namebox">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your name..">
-            </div>
-
-            <div class="emailbox">
-              <label for="email">Email</label>
-              <input type="text" id="email" name="email" placeholder="Your Email..">
-            </div>
-
-            <div class="statusbox">
-              <label for="position">Are you a...?</label>
-              <select id="position" name="position">
-                <option value="customer">Customer</option>
-                <option value="supplier">Supplier</option>
-                <option value="brewery">Brewer</option>
-              </select>
-            </div>
-
-            <div class="subjectbox">
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="How can we help you?" style="height:170px"></textarea>
-              <input type="submit" value="Submit">
-            </div>
-
-          </form>
+      <form action="#" method="post" id="contact_form">
+        
+        <div class="name">
+          <label for="name"></label>
+          <input type="text" placeholder="My name is" name="name" id="name_input" required>
         </div>
 
-      </div>
+        <div class="email">
+          <label for="email"></label>
+          <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+        </div>
 
+        <div class="subject">
+          <label for="subject"></label>
+          <select placeholder="Subject line" name="subject" id="subject_input" required>
+            <option disabled hidden selected>I'm a...</option>
+            <option>Customer</option>
+            <option>Supplier</option>
+            <option>Brewer</option>
+          </select>
+        </div>
+
+        <div class="message">
+          <label for="message"></label>
+          <textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30" rows="5"
+            required></textarea>
+        </div>
+
+        <div class="submit">
+          <input type="submit" value="Send Message" id="form_button" />
+        </div>
+
+      </form>
     </div>
+
+    <div id="reachcontainer">
+      <h1 class="con-title">&bull; Contact Us &bull;</h1>
+        <h5>Call us on:</h5>
+          <p>020 7231 4516</p>
+          <p>Mon-Fri 10am-4pm</p>
+        <h5>Email us:</h5>
+          <p>arch7@thekernelbrewery.com</p>
+    </div>
+    
 
   </section>
 

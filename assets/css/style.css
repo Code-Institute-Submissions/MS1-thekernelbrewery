@@ -488,16 +488,18 @@ iframe {
 
 /*-----------------------beers.html Body--------------------- */
 
-.beersbody {
+#beersbody-desktop, #beersbody-mobile {
     display: flex;
     flex-direction: column;
-    font-family: 'Jost', sans-serif;
-    text-transform: Uppercase;
     text-align: center;
 }
 
+#beersbody-mobile {
+    display: none;
+}
+
 .headtext {
-    margin-top: 20vh;
+    margin-top: 15vh;
     width: 35vw;
     border: 1px solid black;
     display: inline-block;
@@ -506,91 +508,138 @@ iframe {
     margin-right: auto;
 }
 
-.title1 {
-    margin-top: 5vh;
-}
-
-.palesection img, .darksection img, .soursection img {
-    flex-direction: row;
-    height: 80vh;
-}
-
-.palesection, .darksection, .soursection {
-    position: relative;
+#palesection, #darksection, #soursection {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.style-title {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: 'Jost', sans-serif;
+    text-transform: Uppercase;
+}
+
+#soursection {
+    margin-bottom: 4em;
+}
+
+
+#darksection {
     width: auto;
-    overflow: auto;
-    margin: auto;
+    
+    min-width: 1060px;
+
+    
+}
+.card {
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
-.soursection {
-    margin-bottom: 3vh;
+.btn {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(155, 155, 155, .5)
 }
 
-.beerinfo {
-    height: 100%;
-    width: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: -1;
+.btn-primary {
+    background-color: white;
+    border: 0px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
-.beerinfo p {
-    width: 80%;
-    font-size: 120%;
-    margin-left: auto;
-    margin-right: auto;
+.btn-link {
+    text-decoration: underline;
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
 }
 
-.paleale, .ipa, .tablebeer, .dip, .dry {
-    font-size: 100%;
+.btn-link:hover {
+    color: grey;
 }
 
-.saison p, .foeder p {
-    width: 50%;
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(155, 155, 155, 1)
 }
 
-@media only screen and (max-width: 768px) {
-    .beerinfo p {
-        font-size: 95%;
-        top: 35%;
-        height: auto;
+.btn-primary:hover {
+    background-color: rgba(155, 155, 155, .5)
+}
+
+.card-section {
+    border: 0px solid;
+    background-color: white;
+}
+
+.card-header {
+    background-color: white;
+    border: 0px;
+}
+
+@media only screen and (max-width: 1300px) {
+    #darksection {
+    flex-wrap: wrap;
+    
+    }
+    #darksection .card {
+    margin-bottom: 2em;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #beersbody-desktop {
+        display: none;
+    }
+    #beersbody-mobile {
+        display: flex;
+    }
+    #palesection, #darksection, #soursection {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2em;
     }
     .headtext {
         width: 90vw;
-        padding: 0.5em;
+    }
+    .card1 {
+        flex: 1 0 200px
+    }
+
+    .card2 {
+        flex: 1 0 200px
+    }
+
+    .card3 {
+        flex: 1 0 200px
+    }
+    .card4 {
+        flex: 1 0 200px
+    }
+    .card5 {
+        flex: 1 0 200px
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     .headtext {
         margin-top: 25vh;
     }
-    .beerinfo p {
-        font-size: 80%;
-    }
-    .paleale, .ipa, .tablebeer, .dip, .dry {
-        font-size: 120%;
-    }
 }
 
-@media only screen and (max-height: 800px) {
-    .headtext {
-        margin-top: 35vh;
-    }
-}
-
-@media only screen and (max-width: 1050px) {
-    .headtext {
-        width: 90%;
-    }
-    .saison p, .foeder p {
-        width: 80%;
-    }
-}
-
-/*-----------------------events.html--------------------- */
+/*--------------events.html--------------------- */
 
 .initialtext {
     margin-top: 20vh;

@@ -6,7 +6,7 @@ body {
     width: 100%;
 }
 
-.nav-link:hover {
+.nav-link:hover, .active {
     color: white;
 }
 
@@ -103,6 +103,7 @@ footer {
         padding-bottom: 1em;
     }
 }
+
 
 /*-----------------------Footer--------------------- */
 

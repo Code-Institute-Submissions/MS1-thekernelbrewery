@@ -771,7 +771,7 @@ iframe {
 /*--------------events.html--------------------- */
 
 .initialtext {
-    margin-top: 20vh;
+    margin-top: 15vh;
     width: 30em;
     border: 1px solid black;
     display: block;
@@ -785,13 +785,23 @@ iframe {
 .event-link {
     color: black;
     font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    text-decoration: underline;
+    margin-top: 0.5em;
 }
 
 .event-link:hover {
     color: white;
 }
+
+.event h5 {
+    text-decoration: underline;
+}
+
+.event p {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0.3em;
+}
+
+
 
 /* credit to https://www.w3schools.com/howto/howto_css_timeline.asp for the timeline */
 
@@ -812,6 +822,7 @@ iframe {
     bottom: 0;
     left: 50%;
     margin-left: -3px;
+    z-index: -1;
 }
 
 /* Container around content */
@@ -835,7 +846,7 @@ iframe {
     border: 4px solid black;
     top: 15px;
     border-radius: 50%;
-    z-index: 1;
+    z-index: 0;
 }
 
 /* Place the container to the left */
@@ -897,7 +908,7 @@ iframe {
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     /* Place the timelime to the left */
     .timeline::after {
         left: 31px;
@@ -924,7 +935,13 @@ iframe {
         left: 0%;
     }
     .initialtext {
-        margin-top: 35vh;
+        margin-top: 25vh;
+        width: 25em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .initialtext {
         width: 20em;
     }
 }
@@ -953,7 +970,7 @@ iframe {
     width: 20vw;
 }
 
-#contactbody h5, p {
+#contactbody h5, #contactbody p {
     text-align: center;
 }
 

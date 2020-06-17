@@ -154,7 +154,6 @@ footer {
     overflow: hidden;
 }
 
-
 @media only screen and (max-width: 992px) {
     .hero-video {
         display: none;
@@ -202,7 +201,7 @@ footer {
 }
 
 .release-items img {
-    height:70vh;
+    height: 70vh;
 }
 
 .beer1 {
@@ -330,32 +329,35 @@ footer {
         font-size: 150%;
     }
 }
+
 @media only screen and (max-width: 1024px) {
     .release-items {
         flex-direction: column;
     }
     .hovereffect p {
         font-size: 130%;
-        
     }
 }
+
 @media only screen and (min-height: 1300px) {
     .hovereffect p {
         font-size: 160%;
     }
 }
+
 @media only screen and (max-height: 850px) {
     .hovereffect .overlay {
         top: 12%;
-        bottom: 12%; 
+        bottom: 12%;
     }
     .hovereffect p {
         font-size: 120%;
     }
 }
+
 @media only screen and (max-height: 750px) {
     .hovereffect .overlay {
-        width: 100%; 
+        width: 100%;
         left: 0%;
         top: 7.5%;
         bottom: 7.5%;
@@ -367,6 +369,7 @@ footer {
         font-size: 115%;
     }
 }
+
 @media only screen and (max-height: 600px) {
     .hovereffect p {
         font-size: 100%;
@@ -420,7 +423,7 @@ footer {
     height: 70vh;
     width: auto;
     max-height: 900px;
-    max-width:  900px;
+    max-width: 900px;
 }
 
 @media only screen and (max-width: 1580px) {
@@ -438,6 +441,7 @@ footer {
         margin-top: 2vh;
     }
 }
+
 @media only screen and (max-width: 1300px) {
     .dog {
         height: 50vh;
@@ -450,6 +454,7 @@ footer {
         height: 40vh;
     }
 }
+
 @media only screen and (max-width: 992px) {
     .dogphoto {
         display: none;
@@ -466,6 +471,7 @@ footer {
         min-width: 70vw;
     }
 }
+
 @media only screen and (max-width: 500px) {
     .taproominfo {
         height: 30rem;
@@ -473,8 +479,8 @@ footer {
     .taproomhours table {
         margin-top: 3rem;
     }
-    
 }
+
 @media only screen and (max-height: 640px) {
     .taproominfo {
         height: 32rem;
@@ -483,6 +489,7 @@ footer {
         margin-top: 7rem;
     }
 }
+
 @media only screen and (max-height: 600px) {
     .taproominfo {
         height: 42rem;
@@ -638,14 +645,11 @@ iframe {
     margin-bottom: 4em;
 }
 
-
 #darksection {
     width: auto;
-    
     min-width: 100vw;
-
-    
 }
+
 .card {
     margin-left: 2em;
     margin-right: 2em;
@@ -710,11 +714,10 @@ iframe {
 
 @media only screen and (max-width: 1300px) {
     #darksection {
-    flex-wrap: wrap;
-    
+        flex-wrap: wrap;
     }
     #darksection .card {
-    margin-bottom: 2em;
+        margin-bottom: 2em;
     }
 }
 
@@ -728,7 +731,6 @@ iframe {
     #palesection, #darksection, #soursection {
         flex-direction: column;
     }
-
     .card {
         margin-left: auto;
         margin-right: auto;
@@ -740,11 +742,9 @@ iframe {
     .card1 {
         flex: 1 0 200px
     }
-
     .card2 {
         flex: 1 0 200px
     }
-
     .card3 {
         flex: 1 0 200px
     }
@@ -759,6 +759,12 @@ iframe {
 @media only screen and (max-width: 500px) {
     .headtext {
         margin-top: 25vh;
+    }
+    .card img {
+       height: auto;
+       width: 60vw;
+       margin-left: auto;
+       margin-right: auto;
     }
 }
 

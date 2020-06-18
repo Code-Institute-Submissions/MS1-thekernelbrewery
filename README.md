@@ -229,6 +229,8 @@ If this section grows too long, you may want to split it off into a separate fil
 
 - The images used to show the future implementation of untappd integration were taken from [Brewdog Liverpool](https://www.brewdog.com/bars/uk/brewdog-liverpool)
 
+- The table of contents used at the start of this readme was generated with [markdown-toc](https://ecotrust-canada.github.io/markdown-toc/)
+
 ## Inspiration
 
 Inspiration for this project and its design came primarily from -

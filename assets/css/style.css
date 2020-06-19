@@ -103,7 +103,6 @@ footer {
     }
 }
 
-
 /*-----------------------Footer--------------------- */
 
 .basefooter {
@@ -761,10 +760,10 @@ iframe {
         margin-top: 25vh;
     }
     .card img {
-       height: auto;
-       width: 60vw;
-       margin-left: auto;
-       margin-right: auto;
+        height: auto;
+        width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -800,8 +799,6 @@ iframe {
     font-family: 'Roboto', sans-serif;
     margin-bottom: 0.3em;
 }
-
-
 
 /* credit to https://www.w3schools.com/howto/howto_css_timeline.asp for the timeline */
 

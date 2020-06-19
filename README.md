@@ -188,25 +188,32 @@ The initial wireframes shown that the opening hours were meant to feature here t
 - [Google Fonts](https://fonts.google.com)
     - Fonts used; "Oswald, Jost, Roboto"
 
+- [Visual Studio Code](https://code.visualstudio.com)
+    - All code for this project was written in VS Code.
+
+- [Git](https://git-scm.com)
+    - Git was used for version-control and for pushing through to my Github Repo.
+
 # Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+![Testing Excel File](assets/images/userstories/Testing.png)
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+## Results Discussion 
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+- The intended fonts did not load on either Edge or Internet explorer, instead were replaced with sans-serif. 
+- The opacity effect on the dropdown navbar menu did not occur on Internet Explorer, but did in every other testing scenario. 
+- The Hero Video did not load at full resolution for either Edge or Internet Explorer, instead there was just white space. 
+- On smaller screen sizes, from iPhone X down, the Hero Image appears quite small on index.html. It is still there and visible, but could do with the size being increased.
+- The Hover Effect does work on Internet Explorer, however without a background. The white text does appear though, however this is hard to read over the image itself. 
+- On beers.html, all the cards appear larger with extra white space - only when using Internet Explorer. 
+- On smaller screen sizes, from iPhone X down, the taplist on taproom.html requires x-axis scrolling which isn't desireable, however as explained this would be replaced by an Untappd api on a full release. 
 
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
+## Notes on Testing 
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+- All browser resolutions were tested with the Vivaldi browser, and through the use of Chrome Developer Tools within Vivaldi. 
+- The project has been tested on 3 physical mobile devices, listed alongside all other resolutions and browsers. 
+- Individual browsers were tested only at 1920x1080, unless stated otherwise, with the addition of the browser window size reduced to make the appropriate effects take place (ie, Heroimage, Accordion, etc). 
+- Safari was tested on a Macbook Pro 2015 at 2560x1600 resolution.
 
 # Credits
 

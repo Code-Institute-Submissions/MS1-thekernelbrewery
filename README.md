@@ -215,6 +215,21 @@ The initial wireframes shown that the opening hours were meant to feature here t
 - Individual browsers were tested only at 1920x1080, unless stated otherwise, with the addition of the browser window size reduced to make the appropriate effects take place (ie, Heroimage, Accordion, etc). 
 - Safari was tested on a Macbook Pro 2015 at 2560x1600 resolution.
 
+
+## Validation Testing
+
+- Using [W3C HTML Validator](https://validator.w3.org/nu/) reveals no errors, but only the following two warnings: 
+    - Consider avoiding viewport values that prevent users from resizing documents.
+        - From line 18, column 3; to line 18, column 111
+        - script>↩  meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0 />↩  me"
+    - Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections. 
+        - From line 61, column 3; to line 61, column 32
+        - ideo-->↩  section class="hero-section"↩    <
+
+- Using [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator) reveals one error: 
+    - 142	.heroimage	Value Error : max-height Too many values or values are not recognized : auto 
+- Beyond that, all errors and warnings are in regards to Bootstrap, and so nothing to do with my own code. 
+
 # Credits
 
 ## Content

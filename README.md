@@ -230,7 +230,15 @@ In order to deploy to [Github Pages](https://pages.github.com):
 
 - Add --all, commit, and push. 
 
-- Then in your browser, go to https://user.github.io
+- Navigate to the repository on github and click Settings. 
+
+- From there, go to the Source section within the Github Pages section. 
+
+- Select master branch on the dropdown menu, and click save. 
+
+- Now all repositories can be found at user.github.io/repository-name 
+
+- Any time commits and pushes are sent to Github, the Github Pages site should update shortly after. 
 
 To run the project locally:
 

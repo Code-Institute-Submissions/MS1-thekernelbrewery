@@ -220,19 +220,29 @@ Results and discussion on testing can be found in the [testing.md](/testing.md/)
 This project is currently deployed to [Github Pages](https://pages.github.com) and is available to view [here](https://p0shjosh.github.io/MS1-thekernelbrewery/)
 
 In order to deploy to [Github Pages](https://pages.github.com): 
-    - Create a new repository name "user.github.io".
-        - It's important to make sure the username matches, otherwise it won't work. 
-    - Clone the new repository. 
-    - Add an index.html file in the project folder. 
-    - Add --all, commit, and push. 
-    - Then in your browser, go to https://user.github.io
+
+- Create a new repository name "user.github.io".
+    - It's important to make sure the username matches, otherwise it won't work. 
+
+- Clone the new repository. 
+
+- Add an index.html file in the project folder. 
+
+- Add --all, commit, and push. 
+
+- Then in your browser, go to https://user.github.io
 
 To run the project locally:
-    - Click the green Clone or Download button on the [Github Repository](https://github.com/P0shJosh/MS1-thekernelbrewery)
-    - Using the Clone with HTTPS option, copy the link displayed. 
-    - Open your IDE, and ensure the Git Terminal is open.
-    - Change the working directory to the location where the cloned directory is to go.
-    - Use the "git clone" command and paste the url copied in the second step.
+
+- Click the green Clone or Download button on the [Github Repository](https://github.com/P0shJosh/MS1-thekernelbrewery)
+
+- Using the Clone with HTTPS option, copy the link displayed. 
+
+- Open your IDE, and ensure the Git Terminal is open.
+
+- Change the working directory to the location where the cloned directory is to go.
+
+- Use the "git clone" command and paste the url copied in the second step.
 
 # Credits
 

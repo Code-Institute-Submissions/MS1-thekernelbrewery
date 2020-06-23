@@ -31,7 +31,7 @@
     - Centre features the two societies the brewery is a member of, with external links to their respective pages. 
     - Right side includes external social media links to the breweries facebook, twitter, instagram, and untappd pages.
 
-## *Index.html*
+### *Index.html*
 - [Hero Video](/readme/images/features/herovideo.png)
     - Appears at the top of the page, the very top of the video is covered by the navbar. 
     - On larger resolutions, the homepage loads with a large video playing across the page, to draw the user in and demonstrate what the website is clearly about; beer. 
@@ -40,7 +40,7 @@
 - [Hero Image](/readme/images/features/heroimage.png)
     - For smaller, and mobile, resolutions, an image loads, which is taken from the inside of the brewery, and still demonstrates clearly what the website is about. 
         - **Bug:** On smaller screen sizes, from iPhone X down, the Hero Image appeared quite small on index.html. It was still there, however half the image was covered by the navbar. 
-        - **Fix:**
+        - **Fix:** Added margin-top in style.css and media queries.
 - [Latest Releases](/readme/images/features/releases.png)
     - Scroll down the page to just below the hero video or image, depending on window size.
     - Shows the 3 latest beers released by the brewery.
@@ -63,7 +63,7 @@
     - Cards used were [Bootstrap Card Components](https://getbootstrap.com/docs/4.0/components/card/)
     - Each card features an image of the appropriate beer. 
         - **Bug:** Image on each card appeared larger than necessary. 
-        - **Fix:** Reduced the size of each.
+        - **Fix:** Reduced the size of each card.
     - The descriptions explain to the user what is distinct about that style. 
         - **Bug:** Text space on each card appeared larger than necessary, with extra space only being whitespace, though only appears when using Internet Explorer. 
     - Each [button](https://getbootstrap.com/docs/4.0/components/buttons/) leads to the Brewery's already existing external shop page, allowing the user to purchase. 
@@ -112,16 +112,16 @@
 - [Contact](/readme/images/features/contact.png)
     - In the centre of the page, large interactable form for the user to input details and message to. 
         - **Bug:** On submitting the form, lead to an error page. 
-        - **Fix:** 
+        - **Fix:** Adjusted labels to match form control.
         - **Bug:** At some resolutions, lots of white space remained beneath "Send Message" button. 
-        - **Fix:** 
+        - **Fix:** Reduced size of border around contact form to reduce white space.
     - [The Selection Menu](/readme/images/features/contactdrop.png) of the form reveals a dropdown menu to categorise themselves for the site owner. 
     - On smaller resolutions, this form remains in centre of the screen, but at the top of the page.
     - Left side of the page features the "Visit Us" box. 
     - At smaller resolutions, "Visit Us" box drops centrally to beneath the form. 
     - Right side of page features "Go Direct" box. 
         - **Bug:** As window size is reduced, second bullet point on side of "Go Direct" dropped to new line. 
-        - **Fix:**
+        - **Fix:** Included media query to reduce text size at set breakpoints.
     - At smaller resolutions, "Go Direct" box drops centrally to beneath "Visit Us" box.
     
 
@@ -208,7 +208,7 @@
     - Each card on the timeline lists a different beer festival or event occurring throughout the year. 
     - Each card also features the address of the event so the user knows which ones are local to them. 
 
-## Validation Testing
+# Validation Testing
 
 - HTML has been validated using [W3C HTML Validator](https://validator.w3.org/nu/) 
 
@@ -216,6 +216,28 @@
 
 - In both instances, files were validated from local file upload. Validation through URL lead to errors and warnings in regards to bootstrap, which is of no fault regarding my code, and the reason why these errors occured is discussed on the [Bootstrap Site](https://getbootstrap.com/docs/4.5/getting-started/browsers-devices/#validators)
 
-### Validation Testing Results 
+## Validation Testing Results 
 
+### **Index.html**
 
+![Index.html validation](/readme/images/validation/index.png)
+
+### **Beers.html**
+
+![Beers.html validation](/readme/images/validation/beers.png)
+
+### **Taproom.html**
+
+![Taproom.html validation](/readme/images/validation/taproom.png)
+
+### **Events.html**
+
+![Events.html validation](/readme/images/validation/events.png)
+
+### **Contact.html**
+
+![Contact.html validation](/readme/images/validation/contact.png)
+
+### **Style.css**
+
+![Style.css validation](/readme/images/validation/css.png)

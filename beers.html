@@ -1,506 +1,625 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 
-  <title>The Kernel Brewery Beers</title>
-</head>
+    <title>The Kernel Brewery Beers</title>
+  </head>
 
-<body>
-  <!--Navbar-->
-  <header>
+  <body>
+    <!--Navbar-->
+    <header>
 
-    <nav class="navbar navbar-expand-xl">
+      <nav class="navbar navbar-expand-xl">
 
-      <a class="nav-logo" href="index.html"><img src="assets/images/kernel-brewery-logo.png"
-          alt="Kernel Brewery Logo"></a>
+        <a class="nav-logo" href="index.html"><img
+            src="assets/images/kernel-brewery-logo.png"
+            alt="Kernel Brewery Logo"></a>
 
-      <!--Links-->
+        <!--Links-->
 
-      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
-        <span class="navbar-toggler-icon my-toggler"><i class="fa fa-bars fa-3x"></i></span>
+        <button class="navbar-toggler ml-auto" type="button"
+          data-toggle="collapse" data-target="#collapsingNavbar2">
+          <span class="navbar-toggler-icon my-toggler"><i class="fa fa-bars
+              fa-3x"></i></span>
 
-      </button>
-      <div id="navbar-background"></div>
-      <div class="navbar-collapse collapse" id="collapsingNavbar2">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="beers.html"><span class="active">Beers</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="taproom.html"><span>Taproom</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="events.html"><span>Events</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html"><span>Contact</span></a>
-          </li>
+        </button>
+        <div id="navbar-background"></div>
+        <div class="navbar-collapse collapse" id="collapsingNavbar2">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="beers.html"><span class="active">Beers</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="taproom.html"><span>Taproom</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html"><span>Events</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"><span>Contact</span></a>
+            </li>
 
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <section id="beersbody-desktop">
-
-    <div class="headtext">
-      <p>You won't find our beers under a multitude of different names.</p>
-      <p>Rather we brew the following styles, and each time we'll change them up slightly.</p>
-      <p>That might be different hops, or a different adjunct added.</p>
-    </div>
-
-    <h1 class="style-title">Pale & Hoppy</h1>
-
-    <div id="palesection">
-
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top beerinfo" src="assets/images/pale/pale-ale.PNG" alt="330ml Pale Ale bottle">
-        <div class="card-body">
-          <h5 class="card-title">Pale Ale</h5>
-          <p class="card-text">A Pale Ale brewed with various hops, flavour profile is subtly different depending
-            on what hops were used. Around 5.5% ABV. Please drink fresh.</p>
+          </ul>
         </div>
-        <div class="card-footer">
-          <a href="https://store.thekernelbrewery.com/collections/all/products/pale-ale-330ml" target="_blank"
-            class="btn btn-primary">Purchase Here</a>
-        </div>
+      </nav>
+    </header>
+
+    <!--html for the desktop resolution -->
+    <section id="beersbody-desktop">
+
+      <div class="headtext">
+        <p>You won't find our beers under a multitude of different names.</p>
+        <p>Rather we brew the following styles, and each time we'll change them
+          up slightly.</p>
+        <p>That might be different hops, or a different adjunct added.</p>
       </div>
 
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="assets/images/pale/table.PNG" alt="330ml Table beer bottle">
-        <div class="card-body">
-          <h5 class="card-title">Table Beer</h5>
-          <p class="card-text">Our Table Beer. A light pale ale brewed to around 3% ABV , hop varieties vary batch
-            to batch. Please drink fresh.
-          </p>
+      <h1 class="style-title">Pale & Hoppy</h1>
+
+      <div id="palesection">
+
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top beerinfo"
+            src="assets/images/pale/pale-ale.PNG" alt="330ml Pale Ale bottle">
+          <div class="card-body">
+            <h5 class="card-title">Pale Ale</h5>
+            <p class="card-text">A Pale Ale brewed with various hops, flavour
+              profile is subtly different depending
+              on what hops were used. Around 5.5% ABV. Please drink fresh.</p>
+          </div>
+          <div class="card-footer">
+            <a
+              href="https://store.thekernelbrewery.com/collections/all/products/pale-ale-330ml"
+              target="_blank"
+              class="btn btn-primary">Purchase Here</a>
+          </div>
         </div>
-        <div class="card-footer">
-          <a href="https://store.thekernelbrewery.com/collections/all/products/table-beer-500ml" target="_blank"
-            class="btn btn-primary">Purchase Here</a>
+
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="assets/images/pale/table.PNG"
+            alt="330ml Table beer bottle">
+          <div class="card-body">
+            <h5 class="card-title">Table Beer</h5>
+            <p class="card-text">Our Table Beer. A light pale ale brewed to
+              around 3% ABV , hop varieties vary batch
+              to batch. Please drink fresh.
+            </p>
+          </div>
+          <div class="card-footer">
+            <a
+              href="https://store.thekernelbrewery.com/collections/all/products/table-beer-500ml"
+              target="_blank"
+              class="btn btn-primary">Purchase Here</a>
+          </div>
         </div>
+
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="assets/images/pale/ipa.PNG" alt="330ml
+            IPA bottle">
+          <div class="card-body">
+            <h5 class="card-title">IPA</h5>
+            <p class="card-text">Our India Pale Ale. Flavour profile varies
+              depends of the hop variety used. The ABV
+              is
+              around 7%. Please drink fresh.
+            </p>
+          </div>
+          <div class="card-footer">
+            <a
+              href="https://store.thekernelbrewery.com/collections/all/products/india-pale-ale-330-ml"
+              target="_blank"
+              class="btn btn-primary">Purchase Here</a>
+          </div>
+        </div>
+
       </div>
 
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="assets/images/pale/ipa.PNG" alt="330ml IPA bottle">
-        <div class="card-body">
-          <h5 class="card-title">IPA</h5>
-          <p class="card-text">Our India Pale Ale. Flavour profile varies depends of the hop variety used. The ABV
-            is
-            around 7%. Please drink fresh.
-          </p>
+      <h1 class="style-title">Dark Beers</h1>
+
+      <div id="darksection">
+
+        <div class="card card1" style="width: 18rem;">
+          <img class="card-img-top"
+            src="assets/images/dark/double-india-porter.PNG"
+            alt="330ml double india porter bottle">
+          <div class="card-body">
+            <h5 class="card-title">Double India Porter</h5>
+            <p class="card-text">A roastier, hoppier and stronger version of our
+              Export India Porter. Lots of
+              bitterness
+              and intensity.</p>
+          </div>
+          <div class="card-footer">
+            <a
+              href="https://store.thekernelbrewery.com/collections/all/products/india-double-porter-330-ml"
+              target="_blank" class="btn btn-primary">Purchase Here</a>
+          </div>
         </div>
-        <div class="card-footer">
-          <a href="https://store.thekernelbrewery.com/collections/all/products/india-pale-ale-330-ml" target="_blank"
-            class="btn btn-primary">Purchase Here</a>
+
+        <div class="card card2" style="width: 18rem;">
+          <img class="card-img-top" src="assets/images/dark/dry-stout.PNG"
+            alt="330ml dry stout bottle">
+          <div class="card-body">
+            <h5 class="card-title">Dry Stout</h5>
+            <p class="card-text">A dry stout - roasty and round and hop forward.
+              Hop varieties change with each
+              batch.</p>
+          </div>
+          <div class="card-footer">
+            <a
+              href="https://store.thekernelbrewery.com/collections/all/products/dry-stout-330-ml"
+              target="_blank"
+              class="btn btn-primary">Purchase Here</a>
+          </div>
         </div>
+
+        <div class="card card3" style="width: 18rem;">
+          <img class="card-img-top"
+            src="assets/images/dark/export-india-porter.PNG"
+            alt="330ml export india porter bottle">
+          <div class="card-body">
+            <h5 class="card-title">Export India Porter</h5>
+            <p class="card-text">Inspired by the porter recipes of the 1850s
+              that were sent to India, with modern
+              hopping
+              regimes.
+              Hops change from batch to batch. Notes of chocolate, coffee,
+              tobacco, leather. ABV always around 6%.
+            </p>
+          </div>
+          <div class="card-footer">
+            <a
+              href="https://store.thekernelbrewery.com/collections/all/products/export-india-porter"
+              target="_blank"
+              class="btn btn-primary">Purchase Here</a>
+          </div>
+        </div>
+
+        <div class="card card4" style="width: 18rem;">
+          <img class="card-img-top" src="assets/images/dark/export-stout.PNG"
+            alt="330ml export stout bottle">
+          <div class="card-body">
+            <h5 class="card-title">Export Stout</h5>
+            <p class="card-text">Our version of a 130 year old, Export Stout
+              recipe from an old London brewery. We
+              have
+              not changed the
+              recipe much.
+              It's roasty, toasty, bitter, chocolatey, with notes of leather,
+              tar, tobacco, deep plum and raisins.
+              from the signature London brown malt. </p>
+          </div>
+          <div class="card-footer">
+            <a
+              href="https://store.thekernelbrewery.com/collections/all/products/export-stout-london-1890-7-4-330ml"
+              target="_blank" class="btn btn-primary">Purchase Here</a>
+          </div>
+        </div>
+
+        <div class="card card5" style="width: 18rem;">
+          <img class="card-img-top" src="assets/images/dark/imperial-brown.PNG"
+            alt="330ml imperial brown ale bottle">
+          <div class="card-body">
+            <h5 class="card-title">Imperial Brown Ale</h5>
+            <p class="card-text">Brewed to and 1856 recipe from the Barclay
+              Perkins brewery.
+              Rich dark treacle, cut with coffee and chocolate bitterness, and
+              then also that of the hops.
+              Again the brown and amber malts come through to play with smoke,
+              tar, leather and depth.</p>
+          </div>
+          <div class="card-footer">
+            <a
+              href="https://store.thekernelbrewery.com/collections/all/products/imperial-brown-stout-330-ml"
+              target="_blank" class="btn btn-primary">Purchase Here</a>
+          </div>
+        </div>
+
       </div>
 
+      <h1 class="style-title">Sours & Saisons</h1>
 
-    </div>
+      <div id="soursection">
 
-    <h1 class="style-title">Dark Beers</h1>
-
-    <div id="darksection">
-
-      <div class="card card1" style="width: 18rem;">
-        <img class="card-img-top" src="assets/images/dark/double-india-porter.PNG"
-          alt="330ml double india porter bottle">
-        <div class="card-body">
-          <h5 class="card-title">Double India Porter</h5>
-          <p class="card-text">A roastier, hoppier and stronger version of our Export India Porter. Lots of
-            bitterness
-            and intensity.</p>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="assets/images/Sour/Foederbeer.png"
+            alt="330ml Foeder beer bottle">
+          <div class="card-body">
+            <h5 class="card-title">Foeder Beer</h5>
+            <p class="card-text">Our take on a Belgian Pale Ale, fermented with
+              a blend of belgian pale ale
+              yeast,
+              saison
+              yeast, and our
+              house mixed culture,
+              in one of our foeders. Lovely complex yeast character, bitterness
+              and fruitiness from the hops, a
+              touch of
+              acidity from
+              our house culture, with the foeder seeming to give a lovely
+              texture to the whole thing.</p>
+          </div>
+          <div class="card-footer">
+            <a
+              href="https://store.thekernelbrewery.com/collections/all/products/foeder-beer-330ml"
+              target="_blank"
+              class="btn btn-primary">Purchase Here</a>
+          </div>
         </div>
-        <div class="card-footer">
-          <a href="https://store.thekernelbrewery.com/collections/all/products/india-double-porter-330-ml"
-            target="_blank" class="btn btn-primary">Purchase Here</a>
+
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="assets/images/Sour/saison.PNG"
+            alt="330ml bottle of Saison">
+          <div class="card-body">
+            <h5 class="card-title">Bière de Saison</h5>
+            <p class="card-text">Our Bière de Saison is fermented with our house
+              mixed culture of yeast, wild
+              yeast and
+              bacteria,
+              and develops into a dry, effervescent and tart beer after a bit of
+              time.
+              We then either age it in old ex wine barrels / puncheons / foudres
+              for 8-9 months and often dry hop it, or we use this beer as a base
+              for refermentation with fruit,
+              as the seasons permit.</p>
+          </div>
+          <div class="card-footer">
+            <a
+              href="https://store.thekernelbrewery.com/collections/all/products/biere-de-saison-citra-330ml"
+              target="_blank" class="btn btn-primary">Purchase Here</a>
+          </div>
         </div>
+
       </div>
 
-      <div class="card card2" style="width: 18rem;">
-        <img class="card-img-top" src="assets/images/dark/dry-stout.PNG" alt="330ml dry stout bottle">
-        <div class="card-body">
-          <h5 class="card-title">Dry Stout</h5>
-          <p class="card-text">A dry stout - roasty and round and hop forward. Hop varieties change with each
-            batch.</p>
-        </div>
-        <div class="card-footer">
-          <a href="https://store.thekernelbrewery.com/collections/all/products/dry-stout-330-ml" target="_blank"
-            class="btn btn-primary">Purchase Here</a>
-        </div>
+    </section>
+
+    <!--Need duplicate code for mobile styling-->
+    <section id="beersbody-mobile">
+
+      <div class="headtext">
+        <p>You won't find our beers under a multitude of different names.</p>
+        <p>Rather we brew the following styles, and each time we'll change them
+          up slightly.</p>
+        <p>That might be different hops, or a different adjunct added.</p>
+        <p>Click on the titles below to learn more about the styles we brew.</p>
       </div>
 
-      <div class="card card3" style="width: 18rem;">
-        <img class="card-img-top" src="assets/images/dark/export-india-porter.PNG"
-          alt="330ml export india porter bottle">
-        <div class="card-body">
-          <h5 class="card-title">Export India Porter</h5>
-          <p class="card-text">Inspired by the porter recipes of the 1850s that were sent to India, with modern
-            hopping
-            regimes.
-            Hops change from batch to batch. Notes of chocolate, coffee, tobacco, leather. ABV always around 6%.
-          </p>
-        </div>
-        <div class="card-footer">
-          <a href="https://store.thekernelbrewery.com/collections/all/products/export-india-porter" target="_blank"
-            class="btn btn-primary">Purchase Here</a>
-        </div>
-      </div>
+      <!--Addition of accordion differs from desktop-->
+      <div id="accordion">
+        <div class="card-section">
 
-      <div class="card card4" style="width: 18rem;">
-        <img class="card-img-top" src="assets/images/dark/export-stout.PNG" alt="330ml export stout bottle">
-        <div class="card-body">
-          <h5 class="card-title">Export Stout</h5>
-          <p class="card-text">Our version of a 130 year old, Export Stout recipe from an old London brewery. We
-            have
-            not changed the
-            recipe much.
-            It's roasty, toasty, bitter, chocolatey, with notes of leather, tar, tobacco, deep plum and raisins.
-            from the signature London brown malt. </p>
-        </div>
-        <div class="card-footer">
-          <a href="https://store.thekernelbrewery.com/collections/all/products/export-stout-london-1890-7-4-330ml"
-            target="_blank" class="btn btn-primary">Purchase Here</a>
-        </div>
-      </div>
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse"
+                data-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                Pale & Hoppy
+              </button>
+            </h5>
+          </div>
 
-      <div class="card card5" style="width: 18rem;">
-        <img class="card-img-top" src="assets/images/dark/imperial-brown.PNG" alt="330ml imperial brown ale bottle">
-        <div class="card-body">
-          <h5 class="card-title">Imperial Brown Ale</h5>
-          <p class="card-text">Brewed to and 1856 recipe from the Barclay Perkins brewery.
-            Rich dark treacle, cut with coffee and chocolate bitterness, and then also that of the hops.
-            Again the brown and amber malts come through to play with smoke, tar, leather and depth.</p>
-        </div>
-        <div class="card-footer">
-          <a href="https://store.thekernelbrewery.com/collections/all/products/imperial-brown-stout-330-ml"
-            target="_blank" class="btn btn-primary">Purchase Here</a>
-        </div>
-      </div>
+          <div id="collapseOne" class="collapse show hidden-lg-up"
+            aria-labelledby="headingOne" data-parent="#accordion">
+            <div id="palesectionmob">
 
-
-    </div>
-
-    <h1 class="style-title">Sours & Saisons</h1>
-
-    <div id="soursection">
-
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="assets/images/Sour/Foederbeer.png" alt="330ml Foeder beer bottle">
-        <div class="card-body">
-          <h5 class="card-title">Foeder Beer</h5>
-          <p class="card-text">Our take on a Belgian Pale Ale, fermented with a blend of belgian pale ale
-            yeast,
-            saison
-            yeast, and our
-            house mixed culture,
-            in one of our foeders. Lovely complex yeast character, bitterness and fruitiness from the hops, a
-            touch of
-            acidity from
-            our house culture, with the foeder seeming to give a lovely texture to the whole thing.</p>
-        </div>
-        <div class="card-footer">
-          <a href="https://store.thekernelbrewery.com/collections/all/products/foeder-beer-330ml" target="_blank"
-            class="btn btn-primary">Purchase Here</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="assets/images/Sour/saison.PNG" alt="330ml bottle of Saison">
-        <div class="card-body">
-          <h5 class="card-title">Bière de Saison</h5>
-          <p class="card-text">Our Bière de Saison is fermented with our house mixed culture of yeast, wild
-            yeast and
-            bacteria,
-            and develops into a dry, effervescent and tart beer after a bit of time.
-            We then either age it in old ex wine barrels / puncheons / foudres
-            for 8-9 months and often dry hop it, or we use this beer as a base for refermentation with fruit,
-            as the seasons permit.</p>
-        </div>
-        <div class="card-footer">
-          <a href="https://store.thekernelbrewery.com/collections/all/products/biere-de-saison-citra-330ml"
-            target="_blank" class="btn btn-primary">Purchase Here</a>
-        </div>
-      </div>
-    </div>
-
-
-    </div>
-
-  </section>
-
-  <section id="beersbody-mobile">
-
-    <div class="headtext">
-      <p>You won't find our beers under a multitude of different names.</p>
-      <p>Rather we brew the following styles, and each time we'll change them up slightly.</p>
-      <p>That might be different hops, or a different adjunct added.</p>
-      <p>Click on the titles below to learn more about the styles we brew.</p>
-    </div>
-
-    <div id="accordion">
-      <div class="card-section">
-        <div class="card-header" id="headingOne">
-          <h5 class="mb-0">
-            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-              aria-controls="collapseOne">
-              Pale & Hoppy
-            </button>
-          </h5>
-        </div>
-
-
-        <div id="collapseOne" class="collapse show hidden-lg-up" aria-labelledby="headingOne" data-parent="#accordion">
-          <div id="palesection">
-
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top beerinfo" src="assets/images/pale/pale-ale.PNG" alt="330ml pale ale bottle">
-              <div class="card-body">
-                <h5 class="card-title">Pale Ale</h5>
-                <p class="card-text">A Pale Ale brewed with various hops, flavour profile is subtly different depending
-                  on
-                  what hops were used. Around 5.5% ABV. Please drink fresh.</p>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top beerinfo"
+                  src="assets/images/pale/pale-ale.PNG" alt="330ml pale ale
+                  bottle">
+                <div class="card-body">
+                  <h5 class="card-title">Pale Ale</h5>
+                  <p class="card-text">A Pale Ale brewed with various hops,
+                    flavour profile is subtly different depending
+                    on
+                    what hops were used. Around 5.5% ABV. Please drink fresh.</p>
+                </div>
+                <div class="card-footer">
+                  <a
+                    href="https://store.thekernelbrewery.com/collections/all/products/pale-ale-330ml"
+                    target="_blank"
+                    class="btn btn-primary">Purchase Here</a>
+                </div>
               </div>
-              <div class="card-footer">
-                <a href="https://store.thekernelbrewery.com/collections/all/products/pale-ale-330ml" target="_blank"
-                  class="btn btn-primary">Purchase Here</a>
+
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="assets/images/pale/table.PNG"
+                  alt="330ml table beer bottle">
+                <div class="card-body">
+                  <h5 class="card-title">Table Beer</h5>
+                  <p class="card-text">Our Table Beer. A light pale ale brewed
+                    to around 3% ABV , hop varieties vary batch
+                    to
+                    batch. Please drink fresh.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a
+                    href="https://store.thekernelbrewery.com/collections/all/products/table-beer-500ml"
+                    target="_blank"
+                    class="btn btn-primary">Purchase Here</a>
+                </div>
               </div>
+
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="assets/images/pale/ipa.PNG"
+                  alt="330ml IPA bottle">
+                <div class="card-body">
+                  <h5 class="card-title">IPA</h5>
+                  <p class="card-text">Our India Pale Ale. Flavour profile
+                    varies depends of the hop variety used. The ABV
+                    is
+                    around 7%. Please drink fresh.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a
+                    href="https://store.thekernelbrewery.com/collections/all/products/india-pale-ale-330-ml"
+                    target="_blank" class="btn btn-primary">Purchase Here</a>
+                </div>
+              </div>
+
             </div>
-
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="assets/images/pale/table.PNG" alt="330ml table beer bottle">
-              <div class="card-body">
-                <h5 class="card-title">Table Beer</h5>
-                <p class="card-text">Our Table Beer. A light pale ale brewed to around 3% ABV , hop varieties vary batch
-                  to
-                  batch. Please drink fresh.
-                </p>
-              </div>
-              <div class="card-footer">
-                <a href="https://store.thekernelbrewery.com/collections/all/products/table-beer-500ml" target="_blank"
-                  class="btn btn-primary">Purchase Here</a>
-              </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="assets/images/pale/ipa.PNG" alt="330ml IPA bottle">
-              <div class="card-body">
-                <h5 class="card-title">IPA</h5>
-                <p class="card-text">Our India Pale Ale. Flavour profile varies depends of the hop variety used. The ABV
-                  is
-                  around 7%. Please drink fresh.
-                </p>
-              </div>
-              <div class="card-footer">
-                <a href="https://store.thekernelbrewery.com/collections/all/products/india-pale-ale-330-ml"
-                  target="_blank" class="btn btn-primary">Purchase Here</a>
-              </div>
-            </div>
-
           </div>
         </div>
 
         <div class="card-section">
           <div class="card-header" id="headingTwo">
             <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+              <button class="btn btn-link collapsed" data-toggle="collapse"
+                data-target="#collapseTwo"
                 aria-expanded="false" aria-controls="collapseTwo">
                 Dark Beers
               </button>
             </h5>
           </div>
 
-          <div id="collapseTwo" class="collapse hidden-lg-up" aria-labelledby="headingTwo" data-parent="#accordion">
-            <div id="darksection">
+          <div id="collapseTwo" class="collapse hidden-lg-up"
+            aria-labelledby="headingTwo" data-parent="#accordion">
+            <div id="darksectionmob">
 
               <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="assets/images/dark/double-india-porter.PNG"
+                <img class="card-img-top"
+                  src="assets/images/dark/double-india-porter.PNG"
                   alt="330ml double india porter bottle">
                 <div class="card-body">
                   <h5 class="card-title">Double India Porter</h5>
-                  <p class="card-text">A roastier, hoppier and stronger version of our Export India Porter. Lots of
+                  <p class="card-text">A roastier, hoppier and stronger version
+                    of our Export India Porter. Lots of
                     bitterness
                     and intensity.</p>
                 </div>
                 <div class="card-footer">
-                  <a href="https://store.thekernelbrewery.com/collections/all/products/india-double-porter-330-ml"
+                  <a
+                    href="https://store.thekernelbrewery.com/collections/all/products/india-double-porter-330-ml"
                     target="_blank" class="btn btn-primary">Purchase Here</a>
                 </div>
               </div>
 
               <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="assets/images/dark/dry-stout.PNG" alt="330ml dry stout bottle">
+                <img class="card-img-top" src="assets/images/dark/dry-stout.PNG"
+                  alt="330ml dry stout bottle">
                 <div class="card-body">
                   <h5 class="card-title">Dry Stout</h5>
-                  <p class="card-text">A dry stout - roasty and round and hop forward. Hop varieties change with each
+                  <p class="card-text">A dry stout - roasty and round and hop
+                    forward. Hop varieties change with each
                     batch.</p>
                 </div>
                 <div class="card-footer">
-                  <a href="https://store.thekernelbrewery.com/collections/all/products/dry-stout-330-ml" target="_blank"
+                  <a
+                    href="https://store.thekernelbrewery.com/collections/all/products/dry-stout-330-ml"
+                    target="_blank"
                     class="btn btn-primary">Purchase Here</a>
                 </div>
               </div>
 
               <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="assets/images/dark/export-india-porter.PNG"
+                <img class="card-img-top"
+                  src="assets/images/dark/export-india-porter.PNG"
                   alt="330ml export india porter bottle">
                 <div class="card-body">
                   <h5 class="card-title">Export India Porter</h5>
-                  <p class="card-text">Inspired by the porter recipes of the 1850s that were sent to India, with modern
+                  <p class="card-text">Inspired by the porter recipes of the
+                    1850s that were sent to India, with modern
                     hopping
                     regimes.
-                    Hops change from batch to batch. Notes of chocolate, coffee, tobacco, leather. ABV always around 6%.
+                    Hops change from batch to batch. Notes of chocolate, coffee,
+                    tobacco, leather. ABV always around 6%.
                   </p>
                 </div>
                 <div class="card-footer">
-                  <a href="https://store.thekernelbrewery.com/collections/all/products/export-india-porter"
+                  <a
+                    href="https://store.thekernelbrewery.com/collections/all/products/export-india-porter"
                     target="_blank" class="btn btn-primary">Purchase Here</a>
                 </div>
               </div>
 
               <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="assets/images/dark/export-stout.PNG" alt="330ml export stout bottle">
+                <img class="card-img-top"
+                  src="assets/images/dark/export-stout.PNG" alt="330ml export
+                  stout bottle">
                 <div class="card-body">
                   <h5 class="card-title">Export Stout</h5>
-                  <p class="card-text">Our version of a 130 year old, Export Stout recipe from an old London brewery. We
+                  <p class="card-text">Our version of a 130 year old, Export
+                    Stout recipe from an old London brewery. We
                     have
                     not changed the
                     recipe much.
-                    It's roasty, toasty, bitter, chocolatey, with notes of leather, tar, tobacco, deep plum and raisins.
+                    It's roasty, toasty, bitter, chocolatey, with notes of
+                    leather, tar, tobacco, deep plum and raisins.
                     from the signature London brown malt. </p>
                 </div>
                 <div class="card-footer">
-                  <a href="https://store.thekernelbrewery.com/collections/all/products/export-stout-london-1890-7-4-330ml"
+                  <a
+                    href="https://store.thekernelbrewery.com/collections/all/products/export-stout-london-1890-7-4-330ml"
                     target="_blank" class="btn btn-primary">Purchase Here</a>
                 </div>
               </div>
 
               <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="assets/images/dark/imperial-brown.PNG"
+                <img class="card-img-top"
+                  src="assets/images/dark/imperial-brown.PNG"
                   alt="330ml imperial brown ale bottle">
                 <div class="card-body">
                   <h5 class="card-title">Imperial Brown Ale</h5>
-                  <p class="card-text">Brewed to and 1856 recipe from the Barclay Perkins brewery.
-                    Rich dark treacle, cut with coffee and chocolate bitterness, and then also that of the hops.
-                    Again the brown and amber malts come through to play with smoke, tar, leather and depth.</p>
+                  <p class="card-text">Brewed to and 1856 recipe from the
+                    Barclay Perkins brewery.
+                    Rich dark treacle, cut with coffee and chocolate bitterness,
+                    and then also that of the hops.
+                    Again the brown and amber malts come through to play with
+                    smoke, tar, leather and depth.</p>
                 </div>
                 <div class="card-footer">
-                  <a href="https://store.thekernelbrewery.com/collections/all/products/imperial-brown-stout-330-ml"
+                  <a
+                    href="https://store.thekernelbrewery.com/collections/all/products/imperial-brown-stout-330-ml"
                     target="_blank" class="btn btn-primary">Purchase Here</a>
                 </div>
               </div>
 
             </div>
           </div>
+        </div>
 
-          <div class="card-section">
-            <div class="card-header" id="headingThree">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-                  aria-expanded="false" aria-controls="collapseThree">
-                  Sours & Saisons
-                </button>
-              </h5>
-            </div>
+        <div class="card-section">
 
-            <div id="collapseThree" class="collapse hidden-lg-up" aria-labelledby="headingThree"
-              data-parent="#accordion">
-              <div id="soursection">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse"
+                data-target="#collapseThree"
+                aria-expanded="false" aria-controls="collapseThree">
+                Sours & Saisons
+              </button>
+            </h5>
+          </div>
 
-                <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="assets/images/Sour/Foederbeer.png" alt="330ml Foeder beer bottle">
-                  <div class="card-body">
-                    <h5 class="card-title">Foeder Beer</h5>
-                    <p class="card-text">Our take on a Belgian Pale Ale, fermented with a blend of belgian pale ale
-                      yeast,
-                      saison
-                      yeast, and our
-                      house mixed culture,
-                      in one of our foeders. Lovely complex yeast character, bitterness and fruitiness from the hops, a
-                      touch of
-                      acidity from
-                      our house culture, with the foeder seeming to give a lovely texture to the whole thing.</p>
-                  </div>
-                  <div class="card-footer">
-                    <a href="https://store.thekernelbrewery.com/collections/all/products/foeder-beer-330ml"
-                      target="_blank" class="btn btn-primary">Purchase Here</a>
-                  </div>
+          <div id="collapseThree" class="collapse hidden-lg-up"
+            aria-labelledby="headingThree"
+            data-parent="#accordion">
+
+            <div id="soursectionmob">
+
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top"
+                  src="assets/images/Sour/Foederbeer.png" alt="330ml Foeder beer
+                  bottle">
+                <div class="card-body">
+                  <h5 class="card-title">Foeder Beer</h5>
+                  <p class="card-text">Our take on a Belgian Pale Ale, fermented
+                    with a blend of belgian pale ale
+                    yeast,
+                    saison
+                    yeast, and our
+                    house mixed culture,
+                    in one of our foeders. Lovely complex yeast character,
+                    bitterness and fruitiness from the hops, a
+                    touch of
+                    acidity from
+                    our house culture, with the foeder seeming to give a lovely
+                    texture to the whole thing.</p>
                 </div>
-
-                <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="assets/images/Sour/saison.PNG" alt="330ml Saison Bottle">
-                  <div class="card-body">
-                    <h5 class="card-title">Bière de Saison</h5>
-                    <p class="card-text">Our Bière de Saison is fermented with our house mixed culture of yeast, wild
-                      yeast and
-                      bacteria,
-                      and develops into a dry, effervescent and tart beer after a bit of time.
-                      We then either age it in old ex wine barrels / puncheons / foudres
-                      for 8-9 months and often dry hop it, or we use this beer as a base for refermentation with fruit,
-                      as the seasons permit.</p>
-                  </div>
-                  <div class="card-footer">
-                    <a href="https://store.thekernelbrewery.com/collections/all/products/biere-de-saison-citra-330ml"
-                      target="_blank" class="btn btn-primary">Purchase Here</a>
-                  </div>
+                <div class="card-footer">
+                  <a
+                    href="https://store.thekernelbrewery.com/collections/all/products/foeder-beer-330ml"
+                    target="_blank" class="btn btn-primary">Purchase Here</a>
                 </div>
               </div>
 
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="assets/images/Sour/saison.PNG"
+                  alt="330ml Saison Bottle">
+                <div class="card-body">
+                  <h5 class="card-title">Bière de Saison</h5>
+                  <p class="card-text">Our Bière de Saison is fermented with our
+                    house mixed culture of yeast, wild
+                    yeast and
+                    bacteria,
+                    and develops into a dry, effervescent and tart beer after a
+                    bit of time.
+                    We then either age it in old ex wine barrels / puncheons /
+                    foudres
+                    for 8-9 months and often dry hop it, or we use this beer as
+                    a base for refermentation with fruit,
+                    as the seasons permit.</p>
+                </div>
+                <div class="card-footer">
+                  <a
+                    href="https://store.thekernelbrewery.com/collections/all/products/biere-de-saison-citra-330ml"
+                    target="_blank" class="btn btn-primary">Purchase Here</a>
+                </div>
+              </div>
             </div>
+
           </div>
 
-  </section>
-
-  <!--Footer-->
-  <footer>
-
-    <div class="container basefooter">
-      <div class="row">
-        <div class="col contactus">
-          <p></p>
-          <a class="foot-link" href="contact.html"><span>Contact Us</span></a>
-          <p></p>
         </div>
 
-        <div class="col membership">
-          <p>We are Members of</p>
-          <a class="members1" href="https://spa-terminus.co.uk" target="_blank"><span class="members-link">Spa
-              Terminus</span></a>
-          <a class="members2" href="https://www.londonbrewers.org" target="_blank"><span class="members-link">London
-              Brewers Alliance</span></a>
-        </div>
+      </div>
 
-        <div class="col socialmedia">
-          <a class="social-link" href="https://www.facebook.com/pages/The-Kernel-Brewery/203846429748027"
-            target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a class="social-link" href="https://twitter.com/kernelbrewery?lang=en" target="_blank"><i
-              class="fab fa-twitter"></i></a>
-          <a class="social-link" href="https://www.instagram.com/thekernelbrewery/?hl=en" target="_blank"><i
-              class="fab fa-instagram"></i></a>
-          <a class="social-link" href="https://untappd.com/TheKernelBrewery" target="_blank"><i
-              class="fab fa-untappd"></i></a>
+    </section>
+
+    <!--Footer-->
+    <footer>
+
+      <div class="container basefooter">
+        <div class="row">
+          <div class="col contactus">
+            <p></p>
+            <a class="foot-link" href="contact.html"><span>Contact Us</span></a>
+            <p></p>
+          </div>
+
+          <div class="col membership">
+            <p>We are Members of</p>
+            <a class="members1" href="https://spa-terminus.co.uk"
+              target="_blank"><span class="members-link">Spa
+                Terminus</span></a>
+            <a class="members2" href="https://www.londonbrewers.org"
+              target="_blank"><span class="members-link">London
+                Brewers Alliance</span></a>
+          </div>
+
+          <div class="col socialmedia">
+            <a class="social-link"
+              href="https://www.facebook.com/pages/The-Kernel-Brewery/203846429748027"
+              target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a class="social-link"
+              href="https://twitter.com/kernelbrewery?lang=en" target="_blank"><i
+                class="fab fa-twitter"></i></a>
+            <a class="social-link"
+              href="https://www.instagram.com/thekernelbrewery/?hl=en"
+              target="_blank"><i
+                class="fab fa-instagram"></i></a>
+            <a class="social-link" href="https://untappd.com/TheKernelBrewery"
+              target="_blank"><i
+                class="fab fa-untappd"></i></a>
+          </div>
         </div>
       </div>
-    </div>
 
-  </footer>
+    </footer>
 
-</body>
+  </body>
 
 </html>

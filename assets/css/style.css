@@ -138,6 +138,7 @@ footer {
     display: none;
     max-width: 100vw;
     height: auto;
+    margin-top: 7.5em;
     position: relative;
     right: 0;
     bottom: 0;
@@ -180,6 +181,23 @@ footer {
     }
 }
 
+@media only screen and (max-width: 500px) {
+    .heroimage {
+        margin-top: 8.6em;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .heroimage {
+        margin-top: 8em;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .heroimage {
+        margin-top: 7.5em;
+    }
+}
 /*-----------------------Latest Releases--------------------- */
 
 .releases.title {
@@ -624,10 +642,17 @@ iframe {
     margin-right: auto;
 }
 
-#palesection, #darksection, #soursection {
+#palesection, #darksection, #soursection, #palesectionmob, #darksectionmob, #soursectionmob {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+#palesection img, #darksection img, #soursection img {
+    width: 13vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .style-title {
@@ -640,11 +665,11 @@ iframe {
     text-transform: Uppercase;
 }
 
-#soursection {
+#soursection, #soursectionmob {
     margin-bottom: 4em;
 }
 
-#darksection {
+#darksection, #darksectionmob {
     width: auto;
     min-width: 100vw;
 }
@@ -712,10 +737,10 @@ iframe {
 }
 
 @media only screen and (max-width: 1300px) {
-    #darksection {
+    #darksection, #darksectionmob {
         flex-wrap: wrap;
     }
-    #darksection .card {
+    #darksection .card, #darksectionmob .card {
         margin-bottom: 2em;
     }
 }
@@ -727,7 +752,7 @@ iframe {
     #beersbody-mobile {
         display: flex;
     }
-    #palesection, #darksection, #soursection {
+    #palesection, #darksection, #soursection, #palesectionmob, #darksectionmob, #soursectionmob{
         flex-direction: column;
     }
     .card {
@@ -753,24 +778,23 @@ iframe {
     .card5 {
         flex: 1 0 200px
     }
+    .card img {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media only screen and (max-width: 500px) {
     .headtext {
         margin-top: 25vh;
     }
-    .card img {
-        height: auto;
-        width: 60vw;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
 
 /*--------------events.html--------------------- */
 
 .initialtext {
-    margin-top: 15vh;
+    margin-top: 18vh;
     width: 30em;
     border: 1px solid black;
     display: block;
@@ -937,9 +961,27 @@ iframe {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-height: 750px) {
     .initialtext {
-        width: 20em;
+        margin-top: 25vh;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .initialtext {
+        margin-top: 30vh;
+    }
+}
+
+@media screen and (min-height: 1081px) {
+    .initialtext {
+        margin-top: 12vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .initialtext {
+        width: 90vw;
     }
 }
 
@@ -998,9 +1040,10 @@ textarea {
 #contactcontainer {
     border: solid 3px #474544;
     width: 40vw;
+    height: 40em;
     position: relative;
     margin-top: 10em;
-    margin-bottom: 2em;
+    margin-bottom: -5em;
     margin-left: 5em;
     margin-right: 5em;
 }
@@ -1140,7 +1183,11 @@ textarea {
         padding: 20px;
     }
 }
-
+@media only screen and (max-width: 1539px) {
+    #addresscontainer h1, #reachcontainer h1{
+        font-size: 130%;
+    }
+}
 @media only screen and (max-width: 1200px) {
     #contactbody {
         flex-direction: column;

@@ -213,25 +213,42 @@ The initial wireframes shown that the opening hours were meant to feature here t
 
 # Testing
 
-Results and discussion on testing can be found in the [testing.md](/readme/testing.md/) file.
+Results and discussion on testing can be found in the [testing.md](/testing.md/) file.
 
 # Deployment 
 
 This project is currently deployed to [Github Pages](https://pages.github.com) and is available to view [here](https://p0shjosh.github.io/MS1-thekernelbrewery/)
 
-To run the project locally:
+In order to deploy to [Github Pages](https://pages.github.com): 
+    - Create a new repository name "user.github.io".
+        - It's important to make sure the username matches, otherwise it won't work. 
+    - Clone the new repository. 
+    - Add an index.html file in the project folder. 
+    - Add --all, commit, and push. 
+    - Then in your browser, go to https://user.github.io
 
-- Click the green Clone or Download button on the [Github Repository](https://github.com/P0shJosh/MS1-thekernelbrewery)
-- Using the Clone with HTTPS option, copy the link displayed. 
-- Open your IDE, and ensure the Git Terminal is open.
-- Change the working directory to the location where the cloned directory is to go.
-- Use the "git clone" command and paste the url copied in the second step.
+To run the project locally:
+    - Click the green Clone or Download button on the [Github Repository](https://github.com/P0shJosh/MS1-thekernelbrewery)
+    - Using the Clone with HTTPS option, copy the link displayed. 
+    - Open your IDE, and ensure the Git Terminal is open.
+    - Change the working directory to the location where the cloned directory is to go.
+    - Use the "git clone" command and paste the url copied in the second step.
 
 # Credits
 
 ## Content
 
 - The text for each product was copied from their respective product page on [The Kernel Brewery's Store](https://store.thekernelbrewery.com/collections/all) 
+
+- The hover effect on the beers on index.html was taken from [Mike Young](https://miketricking.github.io/bootstrap-image-hover/)
+
+- The contact from was adapted from [this Vintage Inspired form](https://codepen.io/dfitzy/pen/VepqMq) created by [David Fitas/@dfitzy](https://codepen.io/dfitzy)
+
+- The timeline was adapted from the [W3schools timeline tutorial](https://www.w3schools.com/howto/howto_css_timeline.asp)
+
+- The table of contents used at the start of this readme was generated with [markdown-toc](https://ecotrust-canada.github.io/markdown-toc/)
+
+## Media 
 
 - The images for each product were copied from their respective product pages on [The Kernel Brewery's Store](https://store.thekernelbrewery.com/collections/all) 
 
@@ -241,15 +258,7 @@ To run the project locally:
 
 - The Dog photo on index.html was taken from [The Kernel Brewery's Instagram](https://www.instagram.com/thekernelbrewery/)
 
-- The hover effect on the beers on index.html was taken from [Mike Young](https://miketricking.github.io/bootstrap-image-hover/)
-
-- The contact from was adapted from [this Vintage Inspired form](https://codepen.io/dfitzy/pen/VepqMq) created by [David Fitas/@dfitzy](https://codepen.io/dfitzy)
-
-- The timeline was adapted from the [W3schools timeline tutorial](https://www.w3schools.com/howto/howto_css_timeline.asp)
-
 - The images used to show the future implementation of untappd integration were taken from [Brewdog Liverpool](https://www.brewdog.com/bars/uk/brewdog-liverpool)
-
-- The table of contents used at the start of this readme was generated with [markdown-toc](https://ecotrust-canada.github.io/markdown-toc/)
 
 ## Inspiration
 
